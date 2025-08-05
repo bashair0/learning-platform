@@ -7,9 +7,9 @@ import {
   PurchaseTable,
 } from "@/drizzle/schema";
 import { cacheTag } from "next/dist/server/use-cache/cache-tag";
-/* import { getPurchaseUserTag } from "@/features/purchases/db/cache"; */
+import { getPurchaseUserTag } from "@/features/purchases/db/cache";
 
-/* export async function userOwnsProduct({
+export async function userOwnsProduct({
   userId,
   productId,
 }: {
@@ -28,7 +28,7 @@ import { cacheTag } from "next/dist/server/use-cache/cache-tag";
   });
 
   return existingPurchase != null;
-} */
+}
 
 export async function insertProduct(
   data: typeof ProductTable.$inferInsert & { courseIds: string[] }
