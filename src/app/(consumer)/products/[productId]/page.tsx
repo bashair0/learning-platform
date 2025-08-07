@@ -135,7 +135,7 @@ export default async function ProductPage({
                           {lesson.status === "preview" ? (
                             <Link
                               href={`/courses/${course.id}/lessons/${lesson.id}`}
-                              className="underline text-accent-foreground">
+                              className="underline text-accent">
                               {lesson.name}
                             </Link>
                           ) : (
